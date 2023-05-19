@@ -1,1 +1,1 @@
-https://github.com/uscwebdev/itp104-submissions-lenadutta
+https://uscwebdev.github.io/itp104-submissions-lenadutta/
