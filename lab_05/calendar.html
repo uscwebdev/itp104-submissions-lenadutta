@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>June 2023 Calendar</title>
+  <style>
+    .container {
+      max-width: 1100px;
+      margin: 10px auto;
+      text-align: center;
+    }
+
+    header {
+      background-image: url(https://www.almanac.com/sites/default/files/users/AlmanacStaffArchive/june_flowers_weather_full_width.jpg);
+      text-align: center;
+      padding: 36px;
+      width: 100%;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: 24px;
+    }
+
+    table {
+      width: 1100px;
+      border-collapse: collapse;
+      margin-top: 20px;
+      align-items: center;
+    }
+
+    th, td {
+      border: 1px solid #000;
+      padding: 10px;
+      text-align: center;
+      position: relative;
+      word-wrap: break-word;
+      width: 157.14px;
+    }
+
+    thead th {
+      background-color: #ccc;
+    }
+
+    tbody td {
+      height: 100px;
+    }
+
+    td {
+    position: relative;
+    padding-right: 140px;
+  }
+
+  td p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 12px;
+  }
+
+.greyout {
+    opacity: .2;
+}
+
+    
+    .birthday {
+      background-image: url(https://i.pinimg.com/564x/9f/ba/0d/9fba0dc4fa7c61cbf775d7f5b461bec6.jpg);
+      background-size: cover;
+      color: #000;
+    }
+
+    .move {
+      background-image: url(https://cmsplatform.blob.core.windows.net/wwwblackhawkmovingcom/offers/images/large/6a249115-ad05-48a1-b829-29a8494e5444.jpg);
+      background-size: cover;
+      color: #000;
+    }
+
+    .work {
+      background-image: url(data:image/png;base64,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);
+      background-size: cover;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>June 2023</h1>
+    </header>
+    <table>
+      <thead>
+        <tr>
+          <th>Sunday</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="background-color: #808080;"></td>
+          <td style="background-color: #808080;"></td>
+          <td style="background-color: #808080;"></td>
+          <td style="background-color: #808080;"></td>
+          <td class="move" style="vertical-align: text-top">1
+            <p>Move to New York</p>
+          </td>
+          <td style="vertical-align: text-top">2</td>
+          <td style="vertical-align: text-top">3</td>
+        </tr>
+        <tr>
+          <td style="vertical-align: text-top">4</td>
+          <td class="work" style="vertical-align: text-top;">5
+            <p>First Day of Work</p>
+          </td>
+          <td style="vertical-align: text-top">6</td>
+          <td style="vertical-align: text-top">7</td>
+          <td style="vertical-align: text-top">8</td>
+          <td style="vertical-align: text-top">9</td>
+          <td style="vertical-align: text-top">10</td>
+        </tr>
+        <tr>
+            <td style="vertical-align: text-top">11</td>
+            <td style="vertical-align: text-top">12</td>
+            <td style="vertical-align: text-top">13</td>
+            <td style="vertical-align: text-top">14</td>
+            <td style="vertical-align: text-top">15</td>
+            <td style="vertical-align: text-top">16</td>
+            <td style="vertical-align: text-top">17</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: text-top">18</td>
+            <td style="vertical-align: text-top">19</td>
+            <td style="vertical-align: text-top">20</td>
+            <td style="vertical-align: text-top">21</td>
+            <td style="vertical-align: text-top">23</td>
+            <td style="vertical-align: text-top">24</td>
+            <td class="birthday" style="vertical-align: text-top">25
+                <p>My Birthday</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: text-top">26</td>
+            <td style="vertical-align: text-top">27</td>
+            <td style="vertical-align: text-top">28</td>
+            <td style="vertical-align: text-top">29</td>
+            <td style="vertical-align: text-top">30</td>
+            <td style="background-color: #808080;"></td>
+            <td style="background-color: #808080;"></td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
