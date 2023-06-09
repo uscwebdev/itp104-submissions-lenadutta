@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <title>Cat Puzzle</title>
+  <style>
+
+header {
+      background-image: url(https://cdn.mos.cms.futurecdn.net/mHWkN6mvRqrifNryFepjnX.jpg);
+      text-align: center;
+      padding: 10px;
+      width: 96.5%;
+      padding-top: 30px;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    #image-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 600px;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    #image-container img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    #image-container img:nth-child(1),
+    #image-container img:nth-child(9) {
+      position: relative;
+      left: 50px;
+      top: 50px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="puzzle">
+<header>
+    <h1>Cat Puzzle</h1>
+</header>
+<div id="image-container">
+    <img src="puzzle/1.jpg" alt="r1c1">
+    <img src="puzzle/2.jpg" alt="r1c2">
+    <img src="puzzle/3.jpg" alt="r1c3">
+    <img src="puzzle/4.jpg" alt="r2c1">
+    <img src="puzzle/5.jpg" alt="r2c2">
+    <img src="puzzle/6.jpg" alt="r2c3">
+    <img src="puzzle/7.jpg" alt="r3c1">
+    <img src="puzzle/8.jpg" alt="r3c2">
+    <img src="puzzle/9.jpg" alt="r3c3">
+  </div>
+</body>
+</html>
