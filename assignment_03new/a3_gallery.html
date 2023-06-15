@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <title>Crochet Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+@font-face {
+  font-family: cursive;
+  src: url(pacifico-regular.ttf);
+}
+
+h1 {
+    font-family: cursive;
+}
+
+
+
+.header {
+      background-image: url(img/header2.jpeg);
+      background-size: cover;
+      text-align: center;
+      color: #ffffff;
+      padding: 15px;
+    }
+
+    .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  gap: 10px;
+  padding-left: 250;
+  padding-right: 250;
+  padding-top: 30px;
+}
+
+.gallery-item {
+  flex: 1 0 200px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  position: relative;
+  overflow: hidden;
+  height: 150px;
+  width: auto;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding-top: 60px;
+  padding-right: 30px;
+}
+
+.gallery-item:hover .caption {
+  opacity: 1;
+}
+
+.button {
+  background-color: #a97bda;
+  color: white;
+  padding: 16px;
+  padding-left: 665px;
+  padding-right: 648px;
+  font-size: 16px;
+  border: none;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding-left: 650px;
+  padding-right: 750px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #b5b1b1;}
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.dropdown:hover .button {background-color: #a97bda;}
+
+.footer {
+      background-color: #333333;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    </style>
+    
+    
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Photo Gallery</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+
+        <div class="header">
+            <h1>Projects Gallery</h1>
+          </div>
+
+
+<div class="dropdown">
+    <button class="button">Menu</button>
+    <div class="dropdown-content">
+    <a href="a3test.html">Home</a>
+    <a href="a3_gallery.html">Projects Gallery</a>
+    </div>
+    </div>
+
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="img/pic1.jpeg" alt="Image 1">
+          <div class="caption">Butterfly Top</div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/pic2.jpeg" alt="Image 2">
+          <div class="caption">Pants</div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/pic3.jpeg" alt="Image 3">
+          <div class="caption">Beanie</div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/pic4.jpeg" alt="Image 4">
+          <div class="caption">Handwarmers</div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/pic5.jpeg" alt="Image 5">
+          <div class="caption">Infinity Scarf</div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/pic9.jpeg" alt="Image 6">
+          <div class="caption">Color Block Sweater</div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/pic6.jpeg" alt="Image 7">
+          <div class="caption">Stuffed Elephant</div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/pic8.jpeg" alt="Image 8">
+          <div class="caption">Shark Handwarmers</div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/pic7.jpeg" alt="Image 9">
+          <div class="caption">Stuffed Bee</div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/pic10.jpeg" alt="Image 10">
+          <div class="caption">Temperature Blanket</div>
+        </div>
+      </div>
+
+      <div class="footer">
+        Lena Dutta © 2023
+      </div>
+    </body>
+    </html>
+    
